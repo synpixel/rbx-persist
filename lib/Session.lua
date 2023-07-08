@@ -1,8 +1,8 @@
 --!strict
 local Data = require(script.Parent.Data)
 local Logger = require(script.Parent.Logger)
-local Promise = require(script.Parent.Parent.Promise)
-local Signal = require(script.Parent.Parent.Signal)
+local Promise = require(script.Parent.Promise)
+local Signal = require(script.Parent.Signal)
 
 --[=[
   @class Session

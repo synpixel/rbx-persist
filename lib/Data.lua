@@ -1,4 +1,4 @@
-local Promise = require(script.Parent.Parent.Promise)
+local Promise = require(script.Parent.Promise)
 local Data = {}
 
 local DEAD_LOCK_DURATION = 30 * 60 -- 30 minutes
