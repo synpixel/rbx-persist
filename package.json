@@ -1,6 +1,6 @@
 {
 	"name": "@rbxts/persist",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Wrapper around [Persist](https://github.com/lukadev-0/rbx-persist)",
 	"main": "lib/init.luau",
 	"scripts": {
