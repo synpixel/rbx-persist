@@ -1,0 +1,38 @@
+{
+	"name": "@rbxts/persist",
+	"version": "1.0.0",
+	"description": "Wrapper around [Persist](https://github.com/lukadev-0/rbx-persist)",
+	"main": "lib/init.luau",
+	"scripts": {
+		"build": "rbxtsc",
+		"watch": "rbxtsc -w",
+		"prepublishOnly": "pnpm run build"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"types": "lib/index.d.ts",
+	"files": [
+		"lib"
+	],
+	"repository": "https://github.com/synpixel/rbx-persist",
+	"homepage": "https://lukadev-0.github.io/",
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@rbxts/compiler-types": "2.1.0-types.1",
+		"@rbxts/types": "^1.0.704",
+		"@typescript-eslint/eslint-plugin": "^5.61.0",
+		"@typescript-eslint/parser": "^5.61.0",
+		"eslint": "^8.44.0",
+		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-roblox-ts": "^0.0.35",
+		"prettier": "^3.0.0",
+		"typescript": "^5.1.6"
+	},
+	"dependencies": {
+		"@rbxts/beacon": "^2.1.1"
+	}
+}

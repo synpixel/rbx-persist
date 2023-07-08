@@ -4,9 +4,9 @@ local HttpService = game:GetService("HttpService")
 
 local Data = require(script.Parent.Data)
 local Logger = require(script.Parent.Logger)
-local Promise = require(script.Parent.Parent.Promise)
+local Promise = require(script.Parent.Promise)
 local Session = require(script.Parent.Session)
-local Signal = require(script.Parent.Parent.Signal)
+local Signal = require(script.Parent.Signal)
 
 --[=[
 	@interface StoreOptions<TKey, TData>

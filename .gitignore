@@ -2,5 +2,7 @@
 /Packages
 /ServerPackages
 /build
+/node_modules
+/rbxts-persist-**.tgz
 
 Persist.rbxm
