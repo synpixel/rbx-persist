@@ -146,7 +146,7 @@ end)
 ]=]
 function Store.new<TKey, TData>(name: string, options: StoreOptions<TKey, TData>): Store<TKey, TData>
 	local self = {
-		datastore = DataStoreService:GetDataStore(name),
+		datastore = options.dataStore or DataStoreService:GetDataStore(name),
 
 		_getKey = options.key,
 		_getData = options.data,
