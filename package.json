@@ -1,8 +1,8 @@
 {
 	"name": "@rbxts/persist",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Wrapper around [Persist](https://github.com/lukadev-0/rbx-persist)",
-	"main": "lib/init.luau",
+	"main": "lib/init.lua",
 	"scripts": {
 		"build": "rbxtsc",
 		"watch": "rbxtsc -w"
