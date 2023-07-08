@@ -1,6 +1,6 @@
 {
 	"name": "@rbxts/persist",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Wrapper around [Persist](https://github.com/lukadev-0/rbx-persist)",
 	"main": "lib/init.luau",
 	"scripts": {
@@ -15,7 +15,7 @@
 		"lib"
 	],
 	"repository": "https://github.com/synpixel/rbx-persist",
-	"homepage": "https://lukadev-0.github.io/",
+	"homepage": "https://lukadev-0.github.io/rbx-persist/",
 	"publishConfig": {
 		"access": "public"
 	},
