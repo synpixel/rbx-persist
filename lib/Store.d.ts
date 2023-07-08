@@ -19,7 +19,7 @@ export default class Store<TKey, TData> {
     public lockId: string
     public name: string
     public sessions: {[key: string]: Session<TKey, TData>}
-    public sessionReleased: Signal<[Session<TKey, TData>, boolean]>
+    public sessionReleased: Signal<LuaTuple<[session: Session<TKey, TData>, didSave: boolean]>>
 
     constructor(name: string, options: StoreOptions<TKey, TData>)
     getKey(key: TKey): string
