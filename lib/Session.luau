@@ -68,7 +68,7 @@ export type Store<TKey, TData> = typeof(setmetatable(
 	{} :: {
 		name: string,
 		lockId: string,
-		datastore: GlobalDataStore,
+		datastore: DataStore,
 	},
 	{} :: {
 		__index: {

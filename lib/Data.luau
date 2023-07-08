@@ -50,7 +50,7 @@ end
 
 function Data.updateAsync<TKey, TData>(
 	storeName: string,
-	datastore: GlobalDataStore,
+	datastore: DataStore,
 	key: string,
 	transformFunction: (data: RawData<TData>, keyInfo: DataStoreKeyInfo) -> ()
 ): Promise.TypedPromise<RawData<TData>, DataStoreKeyInfo>

@@ -11,7 +11,7 @@ local Signal = require(script.Parent.Signal)
 --[=[
 	@interface StoreOptions<TKey, TData>
 	@within Store
-	.dataStore GlobalDataStore? -- The [GlobalDataStore] to use, defaults to the data store with the name of the store
+	.dataStore DataStore? -- The [DataStore] to use, defaults to the data store with the name of the store
 	.lockId string? -- The ID to use for locking, this should be unique per server, defaults to [Store.defaultLockId]
 	.key ((key: TKey) -> string)? -- A function that takes a key and returns a string key for the data store, this is not needed if the key is a string
 	.data (key: TKey) -> TData -- A function that takes a key and returns the data to store in the data store
@@ -24,7 +24,7 @@ local Signal = require(script.Parent.Signal)
 	The options for the [Store]
 ]=]
 export type StoreOptions<TKey, TData> = {
-	dataStore: GlobalDataStore?,
+	dataStore: DataStore?,
 	lockId: string?,
 	key: ((key: TKey) -> string)?,
 	data: (key: TKey) -> TData,
@@ -53,7 +53,7 @@ Store.__index = Store
 Store.defaultLockId = HttpService:GenerateGUID():lower():gsub("[^a-z0-9]", "")
 
 --[=[
-	@prop datastore GlobalDataStore
+	@prop datastore DataStore
 	@within Store
 	The underlying data store used.
 ]=]
@@ -95,7 +95,7 @@ Store.defaultLockId = HttpService:GenerateGUID():lower():gsub("[^a-z0-9]", "")
 
 export type Store<TKey, TData> = typeof(setmetatable(
 	{} :: {
-		datastore: GlobalDataStore,
+		datastore: DataStore,
 		_getData: (key: TKey) -> TData,
 		_getDefault: (key: TKey) -> TData,
 		_getKey: ((key: TKey) -> string)?,

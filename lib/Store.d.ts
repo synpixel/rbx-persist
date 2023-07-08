@@ -2,7 +2,7 @@ import type { Signal } from "@rbxts/beacon"
 import Session from "./Session"
 
 export interface StoreOptions<TKey, TData> {
-    dataStore?: GlobalDataStore,
+    dataStore?: DataStore,
     lockId?: string,
     key?: (key: TKey) => string,
     data: (key: TKey) => TData,
@@ -15,7 +15,7 @@ export interface StoreOptions<TKey, TData> {
 
 export default class Store<TKey, TData> {
     public defaultLockId: string
-    public datastore: GlobalDataStore
+    public datastore: DataStore
     public lockId: string
     public name: string
     public sessions: {[key: string]: Session<TKey, TData>}
