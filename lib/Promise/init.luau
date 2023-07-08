@@ -1,7 +1,7 @@
 --!strict
 -- Partial types for Promise
 
-local Promise = require(script.Parent.Promise) :: any
+local Promise = require(script.Promise) :: any
 
 export type Status = "Started" | "Resolved" | "Rejected" | "Cancelled"
 
